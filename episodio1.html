@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Episodio 1 — Il Bacio</title>
+  <link rel="stylesheet" href="ep1style.css">
+</head>
+<body class="game-body">
+
+  <main class="game-wrap" id="gameWrap">
+
+    <header class="game-header">
+      <p class="chapter">Episodio 1</p>
+      <h1 class="game-title">Il Bacio</h1>
+      <p class="game-sub">Dalle ultime lettere di Jacopo Ortis &middot; 14 maggio 1798</p>
+    </header>
+
+    <div class="stage" id="stage">
+
+      <canvas id="game" width="1920" height="1080"></canvas>
+
+      <div class="hud" id="hud">
+        <div class="hud-item">
+          <span class="hud-label">Jacopo</span>
+          <span class="hud-hearts" id="hudHearts">&hearts; &hearts; &hearts;</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">Rose</span>
+          <span class="hud-value" id="hudRoses">0</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">Lettere</span>
+          <span class="hud-value" id="hudLetters">0</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">Memorie</span>
+          <span class="hud-value" id="hudMemories">0/0</span>
+        </div>
+      </div>
+
+      <div class="overlay" id="introOverlay">
+        <div class="overlay-card">
+          <p class="chapter">Prologo</p>
+          <h2>14 Maggio 1798 &mdash; Colli Euganei</h2>
+          <p class="quote">
+            &laquo; Il mio cuore &egrave; oppresso d'una passione che incomincia
+            a divorarmi la ragione e la vita... &raquo;
+          </p>
+          <p class="story">
+            Jacopo deve attraversare il giardino della villa per raggiungere
+            <strong>Teresa</strong>. Evita <strong>Odoardo</strong>, raccogli
+            rose e lettere, e arriva fino a lei.
+          </p>
+          <ul class="controls">
+            <li><kbd>&larr;</kbd> <kbd>&rarr;</kbd> muovere &middot; <kbd>Spazio</kbd> / <kbd>&uarr;</kbd> saltare</li>
+            <li><kbd>E</kbd> leggere i monumenti / chiudere i dialoghi</li>
+            <li>salta sulla testa di Odoardo per sconfiggerlo</li>
+          </ul>
+          <button class="pixel-btn" id="startBtn">Comincia</button>
+        </div>
+      </div>
+
+      <div class="overlay hidden" id="kissOverlay">
+        <div class="overlay-card kiss">
+          <p class="chapter">Il Bacio</p>
+          <h2>&laquo; Un bacio... &raquo;</h2>
+          <p class="quote">
+            &laquo; Sento... sentir&ograve; sempre quel suo bacio... un fremito
+            celeste mi si &egrave; sparso per le ossa... le mie labbra
+            tremavano, gli occhi natavano in un soave languore... &raquo;
+          </p>
+          <p class="story">
+            Teresa &egrave; promessa ad Odoardo. Quel bacio &egrave; un attimo
+            di paradiso e l'inizio della rovina di Jacopo.
+          </p>
+          <button class="pixel-btn" id="endBtn">Continua</button>
+        </div>
+      </div>
+
+      <div class="overlay hidden" id="endOverlay">
+        <div class="overlay-card">
+          <p class="chapter">Fine Episodio 1</p>
+          <h2>Addio, Teresa</h2>
+          <p class="quote">
+            &laquo; Teresa! ah, Teresa! Tu sei perduta per me &mdash;
+            e io per te, e per tutti. &raquo;
+          </p>
+          <p class="story">
+            <span id="finalScore">Hai raccolto 0 rose e 0 lettere.</span>
+          </p>
+          <div class="end-actions">
+            <button class="pixel-btn" id="replayBtn">Rigioca</button>
+            <a class="pixel-btn ghost" href="index.html">Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay hidden" id="gameOverOverlay">
+        <div class="overlay-card">
+          <p class="chapter">Sconfitto</p>
+          <h2>Odoardo ti ha fermato</h2>
+          <p class="story">Jacopo non &egrave; arrivato da Teresa.</p>
+          <button class="pixel-btn" id="retryBtn">Riprova</button>
+        </div>
+      </div>
+
+      <div class="dialog-box hidden" id="dialogBox">
+        <p class="dialog-name" id="dialogName">Jacopo</p>
+        <p class="dialog-text" id="dialogText">...</p>
+        <span class="dialog-hint">premi <kbd>X</kbd></span>
+      </div>
+
+    </div>
+
+    <p class="back-link"><a href="index.html">&larr; torna al menu</a></p>
+
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>

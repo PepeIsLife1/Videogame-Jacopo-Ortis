@@ -1,0 +1,125 @@
+/* ============================================================
+   EPISODIO 2 — overrides invernali
+   Estende ep1style.css con palette più fredda e azzurrina
+   ============================================================ */
+
+.game-body.ep2 {
+  background:
+    linear-gradient(0deg, rgba(220, 230, 250, 0.04) 0 4px, transparent 4px 8px),
+    linear-gradient(90deg, rgba(220, 230, 250, 0.04) 0 4px, transparent 4px 8px),
+    linear-gradient(180deg, #0a0e2a, #14182a);
+  background-size: 8px 8px, 8px 8px, auto;
+}
+
+.ep2 .stage {
+  border-color: #aac8d8;
+  box-shadow:
+    0 0 0 4px #0a0e2a,
+    10px 10px 0 #04050d;
+}
+
+.ep2 .game-title {
+  text-shadow:
+    2px 0 #060818,
+    0 2px #060818,
+    4px 4px 0 #000,
+    0 0 16px rgba(170, 200, 230, 0.45);
+}
+
+.ep2 .chapter {
+  color: #ddeaff;
+  background: #2a3a6a;
+  border-color: #1a2848;
+}
+
+.ep2 .pixel-btn {
+  background:
+    linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0 4px, transparent 4px 8px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.07) 0 4px, transparent 4px 8px),
+    linear-gradient(180deg, #4a5e8a, #2a3a6a);
+  background-size: 8px 8px, 8px 8px, auto;
+  border-color: #0a1428;
+  box-shadow: 6px 6px 0 #06080f;
+}
+
+.ep2 .pixel-btn.ghost {
+  background:
+    linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0 4px, transparent 4px 8px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0 4px, transparent 4px 8px),
+    linear-gradient(180deg, #2a2c3a, #1a1c28);
+  background-size: 8px 8px, 8px 8px, auto;
+}
+
+.ep2 .overlay-card {
+  border-color: #aac8d8;
+  background:
+    linear-gradient(0deg, rgba(220, 230, 250, 0.06) 0 var(--pixel), transparent var(--pixel) calc(var(--pixel) * 2)),
+    linear-gradient(90deg, rgba(220, 230, 250, 0.06) 0 var(--pixel), transparent var(--pixel) calc(var(--pixel) * 2)),
+    linear-gradient(160deg, #2a2e4a, #1a1c30);
+  background-size: 8px 8px, 8px 8px, auto;
+  box-shadow: 0 0 0 4px #0a0e2a, 8px 8px 0 #04050d;
+}
+
+.ep2 .overlay-card.encounter {
+  border-color: #e8e0c0;
+  box-shadow: 0 0 0 4px #1a1820, 8px 8px 0 #04050d,
+    0 0 30px rgba(232, 224, 192, 0.35);
+}
+
+.ep2 .overlay-card .quote {
+  color: #e8e8f8;
+  border-left-color: #4a5e8a;
+}
+
+.ep2 .overlay-card .story {
+  color: #b8c4dc;
+}
+
+.ep2 .overlay-card .story strong {
+  color: #ffe7b0;
+}
+
+.ep2 .controls {
+  color: #aac8d8;
+}
+
+.ep2 .controls kbd {
+  background: #1a1c30;
+  border-color: #4a5e8a;
+}
+
+.ep2 .hud {
+  background: linear-gradient(180deg, rgba(0, 6, 20, 0.65), transparent);
+  color: #e8e8f8;
+}
+
+.ep2 .hud-label {
+  color: #aac8d8;
+}
+
+.ep2 .hud-hearts {
+  color: #ff8090;
+  text-shadow: 2px 2px 0 #000, 0 0 6px rgba(255, 100, 110, 0.6);
+}
+
+.ep2 .dialog-box {
+  border-color: #e8e0c0;
+  background: rgba(8, 10, 24, 0.95);
+}
+
+.ep2 .dialog-name {
+  color: #e8e0c0;
+}
+
+.ep2 .dialog-hint kbd {
+  background: #1a1c30;
+  border-color: #4a5e8a;
+}
+
+.ep2 .back-link a {
+  color: #aac8d8;
+}
+
+.ep2 .back-link a:hover {
+  color: #fef2d2;
+}

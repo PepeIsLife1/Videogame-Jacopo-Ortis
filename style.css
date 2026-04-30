@@ -1,0 +1,130 @@
+:root {
+  --bg: #14110f;
+  --paper-dark: #2a1f1a;
+  --paper-mid: #3b2c24;
+  --ink: #f4e8c1;
+  --gold: #d9a441;
+  --red-wax: #9b2d20;
+  --pixel: 4px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  font-family: "Courier New", "Lucida Console", monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ink);
+  image-rendering: pixelated;
+  background:
+    linear-gradient(0deg, rgba(255, 240, 200, 0.05) 0 4px, transparent 4px 8px),
+    linear-gradient(90deg, rgba(255, 240, 200, 0.05) 0 4px, transparent 4px 8px),
+    linear-gradient(180deg, #1b1512, var(--bg));
+  background-size: 8px 8px, 8px 8px, auto;
+}
+
+.screen {
+  width: min(92vw, 760px);
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  background:
+    linear-gradient(0deg, rgba(255, 227, 167, 0.09) 0 var(--pixel), transparent var(--pixel) calc(var(--pixel) * 2)),
+    linear-gradient(90deg, rgba(255, 227, 167, 0.09) 0 var(--pixel), transparent var(--pixel) calc(var(--pixel) * 2)),
+    linear-gradient(160deg, var(--paper-mid), var(--paper-dark));
+  background-size: 8px 8px, 8px 8px, auto;
+  border: 4px solid var(--gold);
+  box-shadow:
+    0 0 0 4px #120f0d,
+    10px 10px 0 #0b0908;
+}
+
+.chapter {
+  display: inline-block;
+  margin: 0 0 1.1rem;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.75rem;
+  color: #ffdca0;
+  border: 3px solid #3f2a23;
+  background: #5d1f18;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.2rem, 4.4vw, 2.4rem);
+  line-height: 1.25;
+  color: var(--ink);
+  text-shadow:
+    2px 0 #100d0b,
+    0 2px #100d0b,
+    4px 4px 0 #000;
+}
+
+.intro {
+  margin: 1.3rem auto 2rem;
+  max-width: 34ch;
+  color: #e8c98c;
+  font-size: 0.9rem;
+}
+
+.btn-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.pixel-btn {
+  display: inline-block;
+  min-width: 180px;
+  padding: 0.85rem 1.2rem;
+  color: #fef2d2;
+  text-decoration: none;
+  font-weight: 700;
+  border: 4px solid #2a1511;
+  background:
+    linear-gradient(0deg, rgba(255, 255, 255, 0.07) 0 4px, transparent 4px 8px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.07) 0 4px, transparent 4px 8px),
+    linear-gradient(180deg, #b63e2b, var(--red-wax));
+  background-size: 8px 8px, 8px 8px, auto;
+  box-shadow: 6px 6px 0 #1a0d0a;
+  transition: transform 120ms steps(2), box-shadow 120ms steps(2), filter 120ms steps(2);
+}
+
+.pixel-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 #1a0d0a;
+  filter: brightness(1.08);
+}
+
+.pixel-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 4px 4px 0 #1a0d0a;
+}
+
+.screen.flicker {
+  animation: flicker 1.4s steps(2, end) infinite;
+}
+
+@keyframes flicker {
+  0%,
+  92%,
+  100% {
+    filter: brightness(1);
+  }
+  93% {
+    filter: brightness(1.12);
+  }
+  94% {
+    filter: brightness(0.95);
+  }
+}
