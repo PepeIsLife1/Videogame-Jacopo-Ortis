@@ -192,7 +192,6 @@
     { x: 3580, y: GROUND_Y - 130, w: 112, h: 14, kind: "balcony" },
     { x: 3820, y: GROUND_Y - 100, w: 96,  h: 14, kind: "balcony" },
     { x: 4220, y: GROUND_Y - 130, w: 112, h: 14, kind: "balcony" },
-    { x: 4480, y: GROUND_Y - 100, w: 96,  h: 14, kind: "balcony" },
     { x: 4920, y: GROUND_Y - 130, w: 96,  h: 14, kind: "balcony" },
     { x: 5180, y: GROUND_Y - 110, w: 112, h: 14, kind: "balcony" },
 
@@ -267,91 +266,51 @@
 
   const dialogs = [
     { x: 100,  name: "Jacopo",
-      text: "Ecco Milano. La neve cade sulla città degli stranieri. Devo trovare il vecchio Parini, l'ultimo che ricorda l'Italia libera." },
+      text: "Ecco Milano. Devo trovare il vecchio Parini." },
     { x: 1620, name: "Jacopo",
-      text: "Le guardie tedesche pattugliano le piazze. Ridono nella nostra lingua, ma non l'amano." },
-    { x: 3300, name: "Jacopo",
-      text: "Eccolo, il Naviglio ghiacciato. Quanti versi sono nati su queste sponde?" },
-    { x: 5400, name: "Jacopo",
-      text: "Ecco la sua casa. La candela arde ancora dietro i vetri. Il poeta veglia." },
+      text: "Le guardie pattugliano le piazze." },
   ];
 
   const monuments = [
     {
       x: 200, kind: "porta",
-      title: "Porta della città — Milano",
-      text: "« La mia patria è dov'è Teresa: ora che la patria mi è tolta, anche l'amore è tolto. Cammino in città straniera dentro la mia città. »",
-      read: false,
-    },
-    {
-      x: 600, kind: "beggar",
-      title: "Il mendicante sotto il portico",
-      text: "« Il popolo ha fame, e i nuovi padroni recitano editti scritti in lingua straniera. Tutti i governi sono uguali per chi non ha pane. »",
+      title: "Porte della città — Milano",
+      text: "« Parini pensava che la società fosse corrotta, i sentimenti erano diventati deboli e falsi, e valori importanti come l’ospitalità, la gentilezza e l’amore familiare non esistevano più. »",
       read: false,
     },
     {
       x: 1500, kind: "edict",
       title: "Editto austriaco affisso al muro",
-      text: "« Ci hanno venduti come greggi al congresso di Campoformio. La Repubblica di Venezia, antica di mille anni, è stata cancellata con un tratto di penna. »",
+      text: "« Parini affermava che quando sentiva queste idee, si riempiva di rabbia e reagiva con forza, gridando che bisognava agire e combattere, anche a costo di morire, perché dal sacrificio sarebbe nata una vendetta o un cambiamento. »",
       read: false,
     },
     {
       x: 2200, kind: "statue",
       title: "Statua di antico romano (mutilata)",
-      text: "« I sepolti gridano dalle loro tombe; ma la patria è muta, e i vivi non sanno più ascoltare. Chi mai potrebbe smuovere questa gente? »",
-      read: false,
-    },
-    {
-      x: 2900, kind: "fountain",
-      title: "Fontana di piazza, ghiacciata",
-      text: "« Voi mi parlate di libertà, mio caro: ma il giorno della libertà è ancora lontano. Le menti son fiacche; anche le menti grandi son fiacche. »",
-      read: false,
-    },
-    {
-      x: 3500, kind: "bridge",
-      title: "Ponte sul Naviglio",
-      text: "« Italia mia! quanti tradimenti, quante viltà, quanti silenzi. Eppure i tuoi morti illustri continuano a parlarmi: ed io li ascolto, e fremo. »",
-      read: false,
-    },
-    {
-      x: 4000, kind: "playbill",
-      title: "Locandina di teatro chiuso",
-      text: "« Ci hanno tolto persino i teatri, perché la commedia non insulti il padrone. La poesia, l'ultima nostra patria, va in esilio dentro i nostri cuori. »",
+      text: "« Pensava che gli esseri umani fossero per natura deboli: tendono a essere sia schiavi sia tiranni, e spesso non riescono a vedere la verità. »",
       read: false,
     },
     {
       x: 4500, kind: "tomb",
       title: "Lapide di un patriota anonimo",
-      text: "« Mi pare di morire ogni giorno, e di non morire mai. Beati i sepolti: a loro i vincitori non possono più togliere nulla. »",
-      read: false,
-    },
-    {
-      x: 5100, kind: "shrine",
-      title: "Edicola sacra all'angolo",
-      text: "« L'esempio non potrà mai giovare a una nazione corrotta. Né potranno gl'Italiani risorgere se non quando i Romani non risorgano per ammaestrarli. »",
+      text: "« Credeva che la fama degli eroi non dipendesse solo dal coraggio, ma anche dalla fortuna e, in parte, perfino dalle loro azioni sbagliate. »",
       read: false,
     },
     {
       x: 5550, kind: "doorPlate",
-      title: "Targa: « Casa del Parini »",
-      text: "« Il vecchio poeta abita qui. Una candela, un libro aperto, un bastone accanto alla porta. È più povero di me, e infinitamente più libero. »",
+      title: "Casa d'infanzia di Parini",
+      text: "« Ripensava al passato e cercava di immaginare il futuro, ma si sentiva sempre perso: ogni suo tentativo di trovare un senso falliva e si sentiva vuoto. »",
       read: false,
     },
   ];
 
   const encounterDialogs = [
     { name: "Parini",
-      text: "« Voi siete dunque il giovine Ortis. Avete gli occhi che ebbi io, mezzo secolo fa, sotto un altro padrone. »" },
+      text: "« Le lettere prostituite: tutte le passioni languenti e degenerate in una indolente vilissima corruzione; non più la sacra ospitalità, non la benevolenza, non più l'amor figliale. »" },
     { name: "Parini",
-      text: "« Sedete, sedete. Non vi vedo, ma vi sento: tremate ancora di indignazione. Bel segno: significa che siete vivo. »" },
+      text: "« Che non si tenta? morremo? ma frutterà dal nostro sangue il vendicatore! »" },
     { name: "Parini",
-      text: "« Voi mi parlate di libertà. Voi sognate, mio caro Jacopo. Il giorno della libertà è lontano: forse i nostri nipoti lo vedranno, forse no. »" },
-    { name: "Parini",
-      text: "« I governi si succedono, ma il popolo resta schiavo: schiavo perché ha perduto il senso dell'onore, e l'onore non si compera col danaro. »" },
-    { name: "Parini",
-      text: "« L'Italia non risorgerà se non risorgono i suoi morti illustri. Voi siete soli, voi giovani: e chi è solo nella verità, è il più libero degli uomini. »" },
-    { name: "Parini",
-      text: "« Andate, mio giovine. Siate giusto, intrepido, infelice. Solo gli infelici amano davvero la verità. Andate. La candela mi si spegne. »" },
+      text: "« I mortali sono naturalmente schiavi, naturalmente tiranni, naturalmente ciechi. »" },
   ];
 
   function px(x, y, w, h, color) {
@@ -624,7 +583,7 @@
     dctx.lineTo(60,  baseY - 50);
     dctx.closePath();
     dctx.fill();
-    const spires = [40, 90, 150, 200, 260, 310, 360];
+    const spires = [60, 150, 200, 260, 300];
     for (const s of spires) {
       dctx.beginPath();
       dctx.moveTo(s, baseY - 50);
@@ -797,7 +756,7 @@
     drawTiled(skylineCanvas, cam * 0.15, GROUND_Y - skylineTileH - 60);
 
     const duomoX = 1800 - cam * 0.3;
-    if (duomoX > -duomoCanvas.width && duomoX < W) {
+    if (duomoX > -duomoCanvas.width -100 && duomoX < W) {
       ctx.drawImage(duomoCanvas, Math.floor(duomoX), Math.floor(GROUND_Y - duomoCanvas.height + 20));
     }
 
@@ -808,8 +767,8 @@
   const trees = [
     { x: 230 }, { x: 580 }, { x: 880 }, { x: 1340 },
     { x: 1900 }, { x: 2380 }, { x: 2700 }, { x: 3060 },
-    { x: 3700 }, { x: 4080 }, { x: 4540 }, { x: 4980 },
-    { x: 5400 }, { x: 5800 },
+    { x: 3700 }, { x: 4540 }, { x: 4980 },
+    { x: 5400 }, { x: 5800 }, { x: 6200 }
   ];
 
   function drawWinterTree(wx, frame) {
@@ -834,9 +793,9 @@
   }
 
   const lamps = [
-    { x: 380 }, { x: 760 }, { x: 1280 }, { x: 1680 },
-    { x: 2080 }, { x: 2620 }, { x: 3120 }, { x: 3640 },
-    { x: 4040 }, { x: 4500 }, { x: 4980 }, { x: 5360 },
+    { x: 380 }, { x: 1280 }, { x: 1680 },
+    { x: 2080 }, { x: 2620 }, { x: 3120 }, { x: 3640 }, 
+    { x: 4500 }, { x: 4980 }, { x: 5360 },
   ];
 
   function drawLamp(wx, frame) {
@@ -1416,9 +1375,9 @@
           const missing = monuments.length - game.readMemories;
           showDialog(
             "Parini",
-            `« Andate, mio giovine, e tornate quando avrete ascoltato ogni voce di questa città. ` +
+            `« Tornate quando avrete ascoltato ogni memoria. ` +
             `${missing === 1 ? "Vi manca ancora una memoria" : `Vi mancano ancora ${missing} memorie`} ` +
-            `da raccogliere. Le pietre parlano: ascoltatele tutte. »`,
+            `da raccogliere. »`,
             true
           );
         }

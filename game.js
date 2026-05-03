@@ -238,11 +238,11 @@
 
   const dialogs = [
     { x: 100,  name: "Jacopo",
-      text: "Eccomi al cancello del giardino. Il cuore mi batte come quando da fanciullo entravo nel bosco di Vallombrosa." },
+      text: "Eccomi al cancello del giardino." },
     { x: 1560, name: "Jacopo",
       text: "Odoardo… sempre tra noi. Egli ha la sua mano, ma non avrà mai la sua anima." },
     { x: 3400, name: "Jacopo",
-      text: "I miei passi non temono più la notte. Ogni foglia, ogni stella, mi parla di lei." },
+      text: "Ogni foglia, ogni stella, mi parla di lei." },
     { x: 4150, name: "Jacopo",
       text: "La vedo, là sotto il pergolato. Teresa…" },
   ];
@@ -251,43 +251,31 @@
     {
       x: 180, kind: "gate",
       title: "Il giardino dei Colli Euganei",
-      text: "« Da que' colli onde Venere mira la dolce sera scendere, io penso a te. Quanti pensieri, quante immagini di lei! »",
-      read: false,
-    },
-    {
-      x: 560, kind: "rosebush",
-      title: "Lettera, 14 maggio 1798 — l'orto",
-      text: "« Eravamo nell'orto. Sua madre travagliava in non so che cucitura: io le stava sotto, leggendole in piedi la Chioma di Berenice del Callimaco. »",
+      text: "« Teresa era sdraiata sotto il gelso mentre lui le recitava le poesie di Saffo. Quel momento gli sembrava così bello e perfetto che non riusciva a descriverlo. »",
       read: false,
     },
     {
       x: 1620, kind: "bench",
       title: "Sotto il vecchio tiglio",
-      text: "« Ovunque io rivolga lo sguardo, m'incontro nelle sue tracce: questo Cielo, questi alberi, queste rose son l'imagine sua. »",
+      text: "« Si sentiva il suono dei ruscelli in lontananza e tutto sembrava più bello grazie alla luce della luna piena, che dava alla scena un’atmosfera quasi divina. »",
       read: false,
     },
     {
       x: 2100, kind: "statue",
       title: "La statua nel boschetto",
-      text: "« Le farfalle volavano sussurrando intorno a noi: ed essa palpitava ancora del recente turbamento. Io non osava parlare. »",
+      text: "« La natura e tutti gli esseri viventi sembravano partecipare alla felicità dei due innamorati, come se condividessero la loro gioia. »",
       read: false,
     },
     {
       x: 2980, kind: "fountain",
-      title: "La fontana — la mano tremante",
-      text: "« Stesi la mano per cogliere quella di Teresa, ma ella ritrasse il braccio; ed io le presi la mano: era tremante; le nostre dita si strinsero. »",
-      read: false,
-    },
-    {
-      x: 3560, kind: "shrine",
-      title: "Edicola — il bacio fugace",
-      text: "« Tutto a un tratto Teresa si chinò, e mi diè un bacio. Mi sentii fremere tutta la persona; un fremito celeste mi si sparse per le ossa. »",
+      title: "La fontana — il bacio",
+      text: "« Teresa lo abbracciava tremando, gli trasmetteva i suoi sospiri mentre il suo cuore batteva forte contro il suo petto. Lo guardava con occhi dolci, lo baciava e le sue labbra socchiuse sussurravano sulle sue. »",
       read: false,
     },
     {
       x: 4260, kind: "wellhead",
       title: "Pozzo — l'addio inevitabile",
-      text: "« Io non sono più degno di lei. Essa è promessa ad altri. Né l'amore può cancellare i giuramenti del padre. Teresa! ah, Teresa! »",
+      text: "« A un certo punto Teresa disse, con dolore profondo, che non avrebbe mai potuto essere sua. Lo guardò con uno sguardo che sembrava allo stesso tempo rimproverarlo e avere compassione per lui. »",
       read: false,
     },
   ];
