@@ -275,13 +275,13 @@
     {
       x: 200, kind: "porta",
       title: "Porte della città — Milano",
-      text: "« Parini pensava che la società fosse corrotta, i sentimenti erano diventati deboli e falsi, e valori importanti come l’ospitalità, la gentilezza e l’amore familiare non esistevano più. »",
+      text: "« Parini pensava che la società fosse corrotta, i sentimenti erano diventati deboli e falsi, e valori importanti come l’ospitalità, la gentilezza e l’amore familiare non esistevano più.»",
       read: false,
     },
     {
       x: 1500, kind: "edict",
-      title: "Editto austriaco affisso al muro",
-      text: "« Parini affermava che quando sentiva queste idee, si riempiva di rabbia e reagiva con forza, gridando che bisognava agire e combattere, anche a costo di morire, perché dal sacrificio sarebbe nata una vendetta o un cambiamento. »",
+      title: "Trattato di Campoformio",
+      text: "« Parini sosteneva che nonostante la grande delusione causata dalle sorti dell'Italia,\nil sacrificio eroico e la lotta violenta fossero inutili, pensava che dal sangue non nasce il cambiamento ma solo nuova tirannia\n e che un uomo giusto non deve macchiarsi di crimini per inseguire una libertà che non otterrà mai. »",
       read: false,
     },
     {
@@ -306,8 +306,8 @@
 
   const encounterDialogs = [
     { name: "Parini",
-      text: "« Le lettere prostituite: tutte le passioni languenti e degenerate in una indolente vilissima corruzione; non più la sacra ospitalità, non la benevolenza, non più l'amor figliale. »" },
-    { name: "Parini",
+      text: "« Le lettere prostituite, tutte le passioni languenti e degenerate in una indolente vilissima corruzione; non più la sacra ospitalità, non la benevolenza, non più l'amor figliale. »" },
+    { name: "Jacopo",
       text: "« Che non si tenta? morremo? ma frutterà dal nostro sangue il vendicatore! »" },
     { name: "Parini",
       text: "« I mortali sono naturalmente schiavi, naturalmente tiranni, naturalmente ciechi. »" },

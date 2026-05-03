@@ -240,11 +240,9 @@
     { x: 100,  name: "Jacopo",
       text: "Eccomi al cancello del giardino." },
     { x: 1560, name: "Jacopo",
-      text: "Odoardo… sempre tra noi. Egli ha la sua mano, ma non avrà mai la sua anima." },
-    { x: 3400, name: "Jacopo",
-      text: "Ogni foglia, ogni stella, mi parla di lei." },
+      text: "Odoardo… sempre in mezzo. Egli ha la sua mano, ma non avrà mai la sua anima." },
     { x: 4150, name: "Jacopo",
-      text: "La vedo, là sotto il pergolato. Teresa…" },
+      text: "Teresa…" },
   ];
 
   const monuments = [
@@ -256,26 +254,26 @@
     },
     {
       x: 1620, kind: "bench",
-      title: "Sotto il vecchio tiglio",
-      text: "« Si sentiva il suono dei ruscelli in lontananza e tutto sembrava più bello grazie alla luce della luna piena, che dava alla scena un’atmosfera quasi divina. »",
+      title: "Sotto il gelso",
+      text: "« Lui disse: Ma e che posso dirti che non sia tutto racchiuso in queste parole? Vi amo.\nA queste parole tutto ciò ch’io vedeva mi sembrava un riso dell’universo »",
       read: false,
     },
     {
       x: 2100, kind: "statue",
-      title: "La statua nel boschetto",
-      text: "« La natura e tutti gli esseri viventi sembravano partecipare alla felicità dei due innamorati, come se condividessero la loro gioia. »",
+      title: "Sensazione divina",
+      text: "« La natura e tutti gli esseri viventi sembravano partecipare alla felicità dei due innamorati, come se condividessero la loro gioia.\nLoro pieni di passione ardente. »",
       read: false,
     },
     {
       x: 2980, kind: "fountain",
-      title: "La fontana — il bacio",
+      title: "Il bacio",
       text: "« Teresa lo abbracciava tremando, gli trasmetteva i suoi sospiri mentre il suo cuore batteva forte contro il suo petto. Lo guardava con occhi dolci, lo baciava e le sue labbra socchiuse sussurravano sulle sue. »",
       read: false,
     },
     {
       x: 4260, kind: "wellhead",
-      title: "Pozzo — l'addio inevitabile",
-      text: "« A un certo punto Teresa disse, con dolore profondo, che non avrebbe mai potuto essere sua. Lo guardò con uno sguardo che sembrava allo stesso tempo rimproverarlo e avere compassione per lui. »",
+      title: "L'addio inevitabile",
+      text: "« A un certo punto Teresa disse, con dolore profondo, che non avrebbe mai potuto essere sua. Lo guardò con uno sguardo che sembrava allo stesso tempo rimproverarlo e avere compassione per lui.\nAccompagnandola lungo la via, non mi guardò più; né io avea più cuore di dirle parola. »",
       read: false,
     },
   ];
